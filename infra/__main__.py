@@ -25,12 +25,12 @@ dev_subnet_cidr = config.require("devSubnetCidr")
 staging_subnet_cidr = config.require("stagingSubnetCidr")
 prod_subnet_cidr = config.require("prodSubnetCidr")
 
-# # Create an Azure Resource Group
-# resource_group = resources.ResourceGroup(
-#     resource_name=resource_group_name,
-#     resource_group_name=resource_group_name,
-#     location=location,
-# )
+# Create an Azure Resource Group
+resource_group = resources.ResourceGroup(
+    resource_name=resource_group_name,
+    resource_group_name=resource_group_name,
+    location=location,
+)
 #
 # # Create a Virtual Network for the AKS cluster
 # vnet = network.VirtualNetwork(
